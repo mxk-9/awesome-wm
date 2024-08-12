@@ -6,7 +6,7 @@ modkey          = "Mod4"
 terminal        = "kitty"
 editor          = os.getenv("EDITOR")
 editor_cmd      = terminal .. " -e " .. editor
-home_cfg        = "/home/sny/nixos-cfg/home/wm/awesome/"
+home_cfg        = "/home/sny/.config/awesome/"
 theme_path      = home_cfg .. "theme/"
 
 -- Do not use pictures in i3lock, if u using monitor > FHD, it starts freeze
