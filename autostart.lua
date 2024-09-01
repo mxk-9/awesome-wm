@@ -31,11 +31,13 @@ end
 -- }}}
 
 cmd = {
+  "setxkbmap -layout 'us,ru' -option 'grp:caps_toggle,compose:rctrl'",
   "picom --config " .. home_cfg .. "picom.conf",
   "nm-applet",
   "unclutter --timeout 1 --jitter 5 --ignore-scrolling",
   "keepassxc",
-  "blueman-applet"
+  "blueman-applet",
+  "emacs --daemon"
 }
 
 for _, v in pairs(cmd) do

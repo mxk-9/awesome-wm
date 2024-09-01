@@ -4,7 +4,7 @@ local gears     = require("gears")
 modkey          = "Mod4"
 -- This is used later as the default terminal and editor to run.
 terminal        = "kitty"
-editor          = os.getenv("EDITOR")
+editor          = os.getenv("EDITOR") or "emacs"
 editor_cmd      = terminal .. " -e " .. editor
 home_cfg        = "/home/sny/.config/awesome/"
 theme_path      = home_cfg .. "theme/"

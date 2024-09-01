@@ -42,6 +42,7 @@ return {
   { { M, M1 }, "#69",    function() ass("discord") end },
   { { M, M1 }, "#68",    function() ass("blueman-manager") end },
   { { M },     "Return", function() awful.spawn(terminal) end },
+  { { M, M1 }, "Return", function() awful.spawn("emacsclient -nc") end },
 
   -- Screenshot
   { {},        "Print",  function() ash(scrot_base .. get_date_file_name(), function() end) end },
