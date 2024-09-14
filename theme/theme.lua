@@ -6,7 +6,7 @@ local theme_assets                              = require("beautiful.theme_asset
 local xresources                                = require("beautiful.xresources")
 local dpi                                       = xresources.apply_dpi
 
-local theme                                     = require("theme.colorschemes.dracula")
+local theme                                     = require("theme.colorschemes.forest")
 
 theme.font                                      = FONT
 theme.useless_gap                               = dpi(0)
@@ -43,7 +43,9 @@ theme.notification_font                         = FONT
 theme.notification_max_width                    = 600
 theme.notification_max_height                   = 250
 theme.notification_icon_size                    = 32
-theme.notification_border_width                 = dpi(4)
+theme.notification_border_width                 = dpi(15)
+theme.notification_bg                           = theme.bg_normal
+theme.notification_fg                           = theme.fg_normal
 
 -- Variables set for theming the menu:
 -- menu_[bg|fg]_[normal|focus]
@@ -51,11 +53,17 @@ theme.notification_border_width                 = dpi(4)
 theme.menu_submenu_icon                         = theme_path .. "submenu_new.png"
 theme.menu_height                               = dpi(50)
 theme.menu_width                                = dpi(300)
+theme.menu_bg_normal                            = theme.bg_normal
+theme.menu_bg_focus                             = theme.bg_focus
+theme.menu_fg_normal                            = theme.fg_normal
+theme.menu_fg_focus                             = theme.fg_focus
+theme.menu_border_color                         = theme.bg_normal
 
 -- You can add as many variables as
 -- you wish and access them by using
 -- beautiful.variable in your rc.lua
 --theme.bg_widget = "#cc0000"
+theme.bg_widget                                 = theme.bg_normal
 
 -- Define the image to load
 theme.titlebar_close_button_normal              = theme_path .. "titlebar/close_normal.png"
