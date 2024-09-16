@@ -17,7 +17,7 @@ i3lock \
 --date-str="" --time-str="" \
 -F -i %s
 ]],
-	(theme_path .. "grey_mountain.jpg")
+	(theme_path .. "greenday.jpg")
 )
 
 TOUCHPAD_STATE  = 1
