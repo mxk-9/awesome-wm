@@ -37,12 +37,13 @@ return {
   { { M },     "#67",    function() ass("firefox") end },
   { { M },     "#68",    function() ass("pavucontrol") end },
   { { M },     "#69",    function() ass("telegram-desktop") end },
-  { { M },     "#70",    function() ass("gimp") end },
+  { { M },     "#70",    function() ass("krita") end },
 
   { { M, M1 }, "#69",    function() ass("discord") end },
   { { M, M1 }, "#68",    function() ass("blueman-manager") end },
   { { M },     "Return", function() awful.spawn(terminal) end },
   { { M, M1 }, "Return", function() awful.spawn("emacsclient -nc") end },
+  { { M, S, M1 }, "Return", function() awful.spawn("emacs") end },
 
   -- Screenshot
   { {},        "Print",  function() ash(scrot_base .. get_date_file_name(), function() end) end },

@@ -16,10 +16,10 @@ return {
 
     {{M}, "l", function () awful.tag.incmwfact( 0.01) end},
     {{M}, "h", function () awful.tag.incmwfact(-0.01) end},
-    {{M, S}, "h", function () awful.tag.incnmaster( 1, nil, true) end},
-    {{M, S}, "l", function () awful.tag.incnmaster(-1, nil, true) end},
-    {{M, C}, "h", function () awful.tag.incncol( 1, nil, true) end},
-    {{M, C}, "l", function () awful.tag.incncol(-1, nil, true) end},
+    {{M, S}, ",", function () awful.tag.incnmaster( 1, nil, true) end},
+    {{M, S}, ".", function () awful.tag.incnmaster(-1, nil, true) end},
+    {{M, C}, ",", function () awful.tag.incncol( 1, nil, true) end},
+    {{M, C}, ".", function () awful.tag.incncol(-1, nil, true) end},
     {{M}, "space", function () awful.layout.inc( 1) end},
     {{M, S}, "space", function () awful.layout.inc(-1) end},
 
